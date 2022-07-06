@@ -1,0 +1,25 @@
+{
+    "name": "@alqmc/utils",
+    "version": "1.0.0",
+    "description": "utils lib",
+    "main": "index.js",
+    "author": "alqmc",
+    "license": "MIT",
+    "keywords": [
+        "utils",
+        "ts"
+    ],
+    "exports": {
+        ".": {
+            "require": "./lib/index.js",
+            "import": "./es/index.mjs"
+        },
+        "./es": "./es/index.mjs",
+        "./lib": "./lib/index.js",
+        "./es/*.mjs": "./es/*.mjs",
+        "./es/*": "./es/*.mjs",
+        "./lib/*.js": "./lib/*.js",
+        "./lib/*": "./lib/*.js",
+        "./*": "./*"
+    }
+}
